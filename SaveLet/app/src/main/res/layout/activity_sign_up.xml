@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ffffff"
+    tools:context="bloodcafe.savelet.SignUp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/image_5" />
+    <!--<TextView-->
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SignUp"
+        android:textColor="#dc2e26"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="249dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingStart="5dp" />
+
+    <EditText
+        android:id="@+id/etmail"
+        android:layout_width="249dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Email/Cell#"
+        android:inputType="textEmailAddress"
+        android:paddingStart="5dp" />
+
+    <LinearLayout
+        android:layout_width="249dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/select_sex"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:entries="@array/gender" />
+        <Spinner
+            android:id="@+id/select_BloodGroup"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:entries="@array/Blood_Group" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etaddess"
+        android:layout_width="249dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Home Town"
+        android:inputType="textPersonName|textPostalAddress"
+        android:paddingStart="5dp" />
+
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="249dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName|textPassword"
+        android:paddingStart="5dp" />
+
+    <EditText
+        android:id="@+id/etcpass"
+        android:layout_width="249dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingStart="5dp" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already a membre?"
+            android:textSize="14dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_login"
+            android:text=" Login"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
